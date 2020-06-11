@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <style>
+            * {
+            margin: 5px;
+            padding: 7px;
+            font-weight:bold;
+        }
+        .a{
+            color: rgb(0,200,80);
+            text-decoration: none;   
+        }
+        .a:hover{
+            text-decoration: none;   
+        }
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        .box{
+            border: 1px solid black;
+            width: 200px;
+        }
+        
+        input[type="button"] {
+            background-color: rgb(0,200,80);
+            border-color: rgb(0,200,80);
+            color: white;
+            width: 50%;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2><a href="http://www.naver.com" target="_self">회원가입</a></h2>
+    <form>
+        아이디<br>
+        <input type = "text" name = "id"> <br>
+        비밀번호<br>
+         <input type = "password" name = "pw"> <br>
+        비밀번호 확인<br>
+        <input type = "password" name = "pw2"> <br>
+        이메일<br>
+         <input type ="email" name="email"> <br>
+        성별<br>
+        <input type = "radio" name = "gender" value="male" id="male" checked> <label for ="male"> 남성</label>
+		<input type = "radio" name = "gender" value="female" id="female"> <label for ="female"> 여성</label><br>
+        전화번호<br>    
+                    <input type = "number" name="phone1"> -
+                    <input type = "number" name="phone2"> - 
+                    <input type = "number" name="phone3"> <br>
+        <input type ="button" value = "가입하기"> <br>
+    </form>
+</body>
+</html>
