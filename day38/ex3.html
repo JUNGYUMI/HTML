@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jqery 예제</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="add">추가</button><br>
+    <div class="res">
+    </div>
+    <script>
+        $(function(){
+            $('#add').click(function(){
+                //res 클래스 요소 안에 있는 html 코드를 가져옴
+                var str = $('.res').html();
+                //가져온 html 코드 뒤에 추가하려는 요소를 이어 붙임
+                str = str + '<input type="text"><br>';
+                // 새로 생성된 html 코드를 res클래스 요소 안에 html코드로 추가
+                $('.res').html(str);
+            })
+        })
+    </script>
+</body>
+</html>
