@@ -997,6 +997,143 @@ body{
 .btn-news-next:hover .icon-news-next{
     background-position: -98px -308px;
 }
+/* 왼쪽 네번째 컨텐츠 css */
+.box-left4{
+    padding: 35px 0 27px;
+}
+.area-title{
+    font-size: 0;
+    float: left;
+}
+.area-title .title{
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+}
+.area-title .dsc{
+    margin-left: 8px;
+    color: gray;
+    font-size: 12px;
+    line-height: 16px;
+}
+.area-info{
+    float: right;
+}
+.area-info .info{
+    color: gray;
+    line-height: 16px;
+    font-size: 12px;
+}
+.area-info .info strong{
+    color: #000;
+}
+.area-info .btn-setting{
+    font-size: 12px;
+    line-height: 16px;
+    position: relative;
+    margin-left: 14px;
+    color: #505050;
+}
+.area-info .btn-setting::before{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+    content: '';
+    vertical-align: -1px;
+    opacity: 0.7;
+    background-position: -458px -223px;
+}
+.area-info .btn-setting:hover{
+    text-decoration: underline;
+}
+.area-info .btn-setting:hover::before{
+    opacity: 1;
+}
+.area-info .btn-setting::after{
+    position: absolute;
+    top: 2px;
+    left: -8px;
+    width: 1px;
+    height: 12px;
+    content: '';
+    background-color: #e4e8eb;
+}
+.box-theme-wrap{
+    height: 49px;
+    width: 100%;
+    position: relative;
+}
+.box-theme-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.box-theme-wrap .list-category::before{
+    border: 1px solid #dae1e6;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.box-theme-wrap .list-category{
+    background-color: #fff;
+    height: 100%;
+    width: 400%;
+}
+.box-theme-wrap .list-category .category-item{
+    width: 94px;
+    height: 100%;
+    float: left;
+    z-index: 1;
+    position: relative;
+}
+.box-theme-wrap .list-category .category-item:first-child,
+.box-theme-wrap .list-category .category-item:nth-child(9),
+.box-theme-wrap .list-category .category-item:nth-child(17),
+.box-theme-wrap .list-category .category-item:nth-child(25){
+    width: 92px;
+}
+.box-theme-wrap .list-category .category-item .btn-tab{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 49px;
+    text-align: center;
+    color: #202020;
+    border-right: 1px solid #dae1e6;
+}
+.box-theme-wrap .list-category .category-item .btn-tab[aria-selected=true]{
+    position: relative;
+    margin: 0 -1px;
+    border-radius: 1px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #1a2f63;
+    color: #fff;
+}
+.box-theme-wrap .btn-prev{
+    top: 25px;
+    left: -23px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position: -47px -357px;
+}
+.box-theme-wrap .btn-next{
+    top: 25px;
+    right: -23px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-position: -92px -357px;
+}
 /* 오른쪽 첫번째 로그인 */
 .box-right{
     width: 350px;
@@ -1090,38 +1227,135 @@ body{
     vertical-align: top;
     background-position: -458px -207px;
 }
+/* 오른쪽 두번 째 컨텐츠 */
 .box-right2{
-    position: relative;
-    height: 47px;
-    margin: 12px 0;
-    letter-spacing: -.25px;
+    height: 49px;
     border: 1px solid #dae1e6;
-    height: 47px;
+    margin: 12px 0;
+    letter-spacing: -0.25px;
+    background-color: #fff;
+    position: relative;
 }
-.card-wrap{
-    height: 47px;
+.box-card-wrap{
+    height: 100%;
     padding-right: 67px;
+    overflow: hidden;
+}
+.box-card-nav{
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+}
+.box-card1{
+    width: 281px;
+    padding: 14px 0 13px 16px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+.badge-news{
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    float: left;
+    height: 18px;
+    margin-right: 8px;
+    padding: 0 7px;
+    vertical-align: top;
+    border: 1px solid #202020;
+    border-radius: 10px;
+    color: #202020;
+    font-style: normal;
+}
+.text-news{
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #404040;
+}
+.box-card2{
+    font-size: 13px;
+    line-height: 29px;
+    display: block;
+    width: 281px;
+    overflow: hidden;
+    padding: 9px 0 9px 16px;
+    float: left;
+    box-sizing: border-box;
+}
+.box-card2::before{
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    vertical-align: top;
+    background-position: 0 -68px;
+    content: '';
+    margin-right: 9px;
+    float: left;
+}
+.text-current{
+    font-size: 15px;
+    vertical-align: top;
+    color: #202020;
+}
+.text-state{
+    font-size: 13px;
+    color: #202020;
+}
+.text-degree-max, .text-degree-min{
+    font-size: 13px;
+    line-height: 29px;
+}
+.text-degree-min{
+    color: #2586ee;
+}
+.text-degree-min::before{
+    display: inline-block;
+    width: 5px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    content: '';
+    vertical-align: -1px;
+    background-position: -417px -131px;
+}
+.text-degree-max{
+    color: #e9564a;
+}
+.box-current{
+    float: left;
+}
+.box-degree{
+    float: left;
+    margin-left: 9px;
+}
+.box-location{
+    float: right;
+    font-size: 12px;
+    line-height: 29px;
+    color: gray;
+}  
+.box-btn{
+    width: 67px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     background-color: #fff;
 }
-.card-nav{
-    width: 47px;
-    height: 24px;
+.box-btn-wrap{
     position: absolute;
     top: 11px;
     right: 10px;
-    overflow: hidden;
 }
-.btn-prev, .btn-next{
-    width: 22px;
-    height: 22px;
+.btn-nav-prev, .btn-nav-next{
     float: left;
     border: 1px solid #e4e8eb;
     background-color: #fff;
 }
-.btn-next{
-    margin-left: -1px;
-}
-.btn-prev::before{
+.btn-nav-prev::before{
     display: inline-block;
     width: 6px;
     height: 9px;
@@ -1130,7 +1364,10 @@ body{
     vertical-align: top;
     background-position: -265px -218px;
 }
-.btn-next::before{
+.btn-nav-next{
+    margin-left: -1px;
+}
+.btn-nav-next::before{
     display: inline-block;
     width: 6px;
     height: 9px;
@@ -1163,11 +1400,24 @@ body{
 .link-join::before,
 .btn-prev::before,
 .btn-next::before,
+.card-weather::before,
+.text-degree-min::before,
+.btn-nav-prev::before,
+.btn-nav-next::before,
+.btn-info-set::before,
+.area-info .btn-setting::before,
+.box-theme-container::after,
 .bg-44265f{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main.44265f.png);
     background-repeat: no-repeat;
     background-size: 471px 442px;
 }    
+.box-card2::before,
+.bg-284fc7{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_weather_time.284fc7.png);
+    background-repeat: no-repeat;
+    background-size: 199px 165px;
+}
 .display-none{
     display:none !important;    /* 우선순위 무시하고 무조건 적용되게하는 역할 */
 }
