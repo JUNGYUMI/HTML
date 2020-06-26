@@ -165,10 +165,24 @@ $(function(){
             $(this).toggleClass('active');
             $(this).siblings().toggleClass('disable');
         })
+        $('.btn-nav-prev').click(function(){
+            if(!$('.box-card-nav>.card').is(':animated')){
+                $('.box-card-nav>.card').last().detach().prependTo('.box-card-nav').css('margin-left','-281px');
+                $('.box-card-nav>.card').first().animate({'margin-left':'0'},500)
+            }
+        })
+        $('.btn-nav-next').click(function(){
+            if(!$('.box-card-nav>.card').is(':animated')){
+                $('.box-card-nav>.card').first().animate({'margin-left':'-281px'},500,function(){
+                    $(this).detach().appendTo('.box-card-nav').removeAttr('style');
+                })
+            }
+        })
         function initMenu(){
             $('.box-service-menu.display').addClass('display-none');
         }
     })
+    
 
 
 /* hover이벤트를 어떨 때 css에 하고 js로 하는가?
