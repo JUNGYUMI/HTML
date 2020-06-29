@@ -247,6 +247,12 @@ $(function(){
                 $('.box-theme-wrap .btn-next').addClass('display-none');
             }
         }
+        // 오른쪽 네번째 기능
+        var cnt=1;
+        $('.bnt-shop-next').click(function(e){
+            e.preventDefault();
+            $('.current')
+        })
         function initMenu(){
             $('.box-service-menu.display').addClass('display-none');
             $('.box-service-menu.set').addClass('display-none');

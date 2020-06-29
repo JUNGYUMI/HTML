@@ -714,8 +714,6 @@ body{
 .box-left{
     width: 750px;
     float: left;
-    background-color: yellow;
-    height: 1000px;
     padding: 20px 0;
 }
 .box-left1{
@@ -1138,8 +1136,6 @@ body{
 .box-right{
     width: 350px;
     float: right;
-    background-color: rgb(205, 255, 205);
-    height: 1000px;
     padding: 20px 0;
 }
 .box-right1{
@@ -1227,7 +1223,7 @@ body{
     vertical-align: top;
     background-position: -458px -207px;
 }
-/* 오른쪽 두번 째 컨텐츠 */
+/* 오른쪽 두번째 컨텐츠 */
 .box-right2{
     height: 49px;
     border: 1px solid #dae1e6;
@@ -1376,6 +1372,240 @@ body{
     vertical-align: top;
     background-position: -417px -147px;
 }
+/* 오른쪽 세번째 컨텐츠 */
+.box-right3{
+    position: relative;
+}
+.box-ad{
+    text-decoration: underline;
+}
+/* 오른쪽 네번째 컨텐츠 */
+.box-right4{
+ width: 350px;
+ margin-top: 15px;
+ font-size: 12px;
+ line-height: 16px;
+ color: #202020;
+}
+.box-shop-wrap{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border: 0;
+    width: 350px;
+    height: 1191px;
+    transform: translateZ(0);
+    letter-spacing: -.25px;
+    background-color: #fff;
+}
+.box-shop-header{
+    height: 19px;
+    line-height: 17px;
+    padding: 12px 0 13px;
+}
+.box-shop{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    float: left;
+    margin: -1px 0 3px;
+    color: #000;
+}
+.link-shop{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.box-shop-tab{
+    font-size: 13px;
+    font-weight: bold;
+    float: right;
+    height: 19px;
+}
+.tab-product{
+    float: left;
+    height: 19px;
+}
+.tab-mall{
+    margin-left: 15px;
+    float: left;
+    height: 19px;
+}
+.tab-men{
+    margin-left: 15px;
+    float: left;
+    height: 19px;
+}
+.box-shop-tab .link-shop-tab{
+    display: block;
+    padding: 0 1px;
+    text-decoration: none;
+    color: #202020;
+    border-bottom: 2px solid transparent;
+}
+.box-shop-contents{
+    overflow: hidden;
+    height: 1145px;
+    border: 1px solid #e4e8eb;
+}
+.box-group-mall{
+    overflow: hidden;
+    padding: 12px 9px 11px 17px;
+    border-bottom: 1px solid #dae1e6;
+    background-color: #f7f9fa;
+}
+.box-mall-area{
+    height: 23px;
+}
+.box-mall-area::after{
+    display: table;
+    clear: both;
+    table-layout: fixed;
+    content: '';
+}
+.box-group-mall .link-mall{
+    line-height: 23px;
+    float: left;
+    color: #404040;
+    text-decoration: none;
+    font-size: 12px;
+}
+.box-group-mall .ls9{
+    margin: 10px 9px 0;
+}
+.box-group-mall .ls5{
+    margin: 10px 5px 0;
+}
+.box-group-mall [class^=ls]{
+    display: inline-block;
+    float: left;
+    width: 3px;
+    height: 3px;
+    vertical-align: top;
+    border-radius: 50%;
+    background-color: #c9cccf;
+}
+.box-group-goods{
+    position: relative;
+    padding: 55px 7px 16px 9px;
+    height: 861px;
+}
+.box-shop-control{
+    top: 16px;
+    right: 8px;
+    height: 26px;
+    position: absolute;
+    text-align: right;
+}
+.box-shop-control::after{
+    display: table;
+    clear: both;
+    table-layout: fixed;
+    content: '';
+}
+.box-group-goods .box-shop-num{
+    float: left;
+    padding: 5px 0;
+    color: gray;
+    height: 16px;
+}
+.box-group-goods .current{
+    font-weight: bold;
+    margin-right: 4px;
+    color: #202020;
+    font-style: normal;
+}
+.btn-shop-box{
+    float: left;
+    overflow: hidden;
+    margin-left: 7px;
+    height: 26px;
+}
+.btn-shop-box::after{
+    display: table;
+    clear: both;
+    table-layout: fixed;
+    content: '';
+}
+.btn-shop-box .btn{
+    width: 23px;
+    height: 24px;
+    float: left;
+    border: 1px solid #dae1e6;
+    background-color: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+.btn-shop-prev::before{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    margin: 8px 10px 7px 8px;
+    content: '';
+    vertical-align: top;
+    background-position: 0 -29px;
+}
+.btn-shop-next{
+    margin-left: -1px;
+}
+.btn-shop-next::before{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    margin: 8px 8px 7px 10px;
+    content: '';
+    vertical-align: top;
+    background-position: -39px 0;
+}
+.list-goods-wrap{
+    overflow: hidden;
+    height: 818px;
+}
+.list-goods{
+    height: 836px;
+    margin-top: -18px;
+    overflow: hidden;
+    margin-right: -5px;
+}
+.list-goods-wrap .goods-item{
+    margin-top: 18px;
+    float: left;
+    width: 107px;
+    height: 191px;
+    margin-right: 5px;
+}
+.goods-area{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 191px;
+    font-size: 12px;
+    border: 1px solid lightgray;
+}
+.box-shop-page{
+    margin-top: 17px;
+    text-align: center;
+    height: 26px;   
+}
+.box-shop-page .btn{
+    width: 23px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #dae1e6;
+    background-color: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+.box-shop-page .btn-shop-num{
+    display: inline-block;
+    min-width: 80px;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: top;
+    color: grey;
+}
 /* 푸터관련 css */
 .box-container-footer{
     height: 423px;
@@ -1386,6 +1616,7 @@ body{
     border-color: #00c73c;
     color: #fff;
 }
+
 /* 배경 이미지 클래스 */ 
 .link-set::after,
 .btn-more::after,
@@ -1412,11 +1643,19 @@ body{
     background-repeat: no-repeat;
     background-size: 471px 442px;
 }    
+/* 날씨 이미지 */
 .box-card2::before,
 .bg-284fc7{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_weather_time.284fc7.png);
     background-repeat: no-repeat;
     background-size: 199px 165px;
+}
+/* 이전, 다음 이미지 */
+.btn-shop-prev::before,
+.btn-shop-next::before{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_shop.2ab465.png);
+    background-repeat: no-repeat;
+    background-size: 44px 38px;
 }
 .display-none{
     display:none !important;    /* 우선순위 무시하고 무조건 적용되게하는 역할 */
