@@ -88,10 +88,13 @@
             $('.link-menu').click(function(){
                 /* 선택된 메뉴를 포함한 모든 메뉴에 bg-gray 클래스 제거*/
                 $('.link-menu').removeClass('bg-gray');
+
                 // 선택된 메뉴에만 다시 bg-gray클래스를 추가
                 $(this).addClass('bg-gray');
+
                 // 메뉴?을 문자열로 가져옴
                 var menu = $(this).text();
+                
                 // 마지막 글자를 추출하는 코드
                 menu = menu.substring(menu.length-1);
                 var className = '.box' + menu;
