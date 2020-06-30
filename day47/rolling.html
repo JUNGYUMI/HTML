@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rolling 예제</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        .box-container{
+            width: 300px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        .box-main{
+            width: 1200px;
+            height: 100%;
+            box-sizing:border-box;
+        }
+        .box{
+            width: 300px;
+            height: 100%;
+            float: left;
+            background-color:lightskyblue;
+        } 
+        .box-sub2{ background-color:lightslategrey; }
+        .box-sub3{ background-color:lightcoral; }
+        .box-container{margin-left: -600px;}
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box-main">
+            <div class="box box-sub1"></div>
+            <div class="box box-sub2"></div>
+            <div class="box box-sub3"></div>
+        </div>
+    </div>
+    <button class="btn">버튼</button>
+    <script>
+        $(function(){
+            $('.btn').click(function(){
+
+            })
+        })
+    </script>
+</body>
+</html>
