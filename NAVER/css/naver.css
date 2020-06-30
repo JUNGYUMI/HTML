@@ -1528,7 +1528,8 @@ body{
     table-layout: fixed;
     content: '';
 }
-.btn-shop-box .btn{
+.btn-shop-box .btn-shop-prev,
+.btn-shop-box .btn-shop-next{
     width: 23px;
     height: 24px;
     float: left;
@@ -1546,7 +1547,7 @@ body{
     vertical-align: top;
     background-position: 0 -29px;
 }
-.btn-shop-next{
+.btn-shop-box .btn-shop-next{
     margin-left: -1px;
 }
 .btn-shop-next::before{
@@ -1588,7 +1589,8 @@ body{
     text-align: center;
     height: 26px;   
 }
-.box-shop-page .btn{
+.box-shop-page .btn-shop-prev,
+.box-shop-page .btn-shop-next{
     width: 23px;
     height: 24px;
     display: inline-block;
