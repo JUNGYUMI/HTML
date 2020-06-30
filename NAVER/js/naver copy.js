@@ -248,8 +248,8 @@ $(function(){
     // 선택된 내용에 맞는 box-shop-body가 보이도록하는 함수
     function shopView(){
         var target = $('.box-shop-header .tab[aria-selected=true]').attr('data-target');
-        $('.box-shop-body div').addClass('display-none');
-        $('.box-shop-body .' +target).removeClass('display-none');
+        $('.box-shop-body>div').addClass('display-none');
+        $('.box-shop-body>.' +target).removeClass('display-none');
     }
     shopView();
     tabRandom();
@@ -290,9 +290,38 @@ $(function(){
     function initMenu(){
         $('.box-service-menu.display').addClass('display-none');
     }
-})
-    
 
+    // 오른쪽 네번째 쇼핑샵
+    $('.box-shop-control>.box-btn>a').click(function(e){
+		//a태그의 링크나 싱커 기능을 막는 역할 => 페이지 변동이 없도록함
+		e.preventDefault();
+		//var currentObj = $('.box-shop-control>.box-num>.current-num');
+		var currentObj = $(this).parents('.box-shop-control')
+				.find('.box-num>.current-num');
+		//현재 페이지 번호를 가져옴
+		var current = currentObj.text();
+		//문자열로 된 페이지 번호를 숫자로 변경
+		current = parseInt(current);
+		var change;
+		//var max = $('.box-shop-control>.box-num>.max-num').text();
+		var max = $(this).parents('.box-shop-control')
+					.find('.box-num>.max-num').text();
+		max = parseInt(max);
+		//이전 버튼인 경우, 해당 버튼은 btn-prev 클래스를 가지고 있음
+		if($(this).hasClass('btn-prev')){
+			change = current - 1;
+			if(change == 0)
+				change = max;
+		}
+		//다음 버튼인 경우
+		else{
+			change = current + 1;
+			if(change == max+1)
+				change = 1;
+		}
+		currentObj.text(change)
+	})
+})
 
 /* hover이벤트를 어떨 때 css에 하고 js로 하는가?
 hover 이벤트가 발생된 요소와 스타일을 적용할 요소가 같은 경우는 css로 
