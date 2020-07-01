@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate 예제3</title>
+    <script src="../js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
+    <style>
+        .box-view{
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            overflow: hidden;
+            position: relative;
+        }
+        .box-container{
+            width: 1600px;
+            height: 100%;
+        }
+        .box{
+            width: 400px;
+            height: 100%;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVN4No0LCULaIbL6Cx1bpqZbZ6_LI_5xiLrg&usqp=CAU");
+            float: left;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box2{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKiuyFhUmaeIkCKiPdAPzBIYt3lzTjsOJwnA&usqp=CAU"); }
+        .box3{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRf1bIIPOkf36NbCVsxbANB0d82fqVptx30wA&usqp=CAU"); }
+        .box-container{ margin-left: -800px; }
+
+        .btn-prev,
+        .btn-next{
+        position: absolute;
+        top: 85px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        display: block;
+        text-align: center; /* 아이콘은 글자처럼 가운데 정렬 가능 */
+        color: lightcyan; /* 아이콘은 글자색을 따름 */
+        }
+        .btn-next{
+            right: 0;
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="box-view">
+        <a href="#" class="btn-prev"><i class="fas fa-angle-left"></i></a>
+        <a href="#" class="btn-next"><i class="fas fa-angle-right"></i></a>
+        <div class="box-container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
+    </div>
+    <script>
+        /* 이미지가 롤링 되고, 버튼을 클릭하면 이미지가 이동하는
+		예제 : 부트스트랩의 carousel 기능과 유사*/
+		$(function(){
+			var intervalId = interval();
+
+			$('.box-view').hover(function(){
+				clearInterval(intervalId);
+			},function(){	
+				intervalId = interval();
+			})
+			$('.btn-next').click(function(e){
+				e.preventDefault();
+				if(!$('.box').is(':animated')){
+					$('.box').first().animate({'margin-left':'400px'},1000,function(){
+						$('.box').last().detach().prependTo('.box-container')
+						$(this).removeAttr('style');
+					})
+				}
+			})
+			$('.btn-prev').click(function(e){
+				e.preventDefault();
+				if(!$('.box').is(':animated')){
+					$('.box').first().detach().appendTo('.box-container');
+					$('.box').first().css('margin-left','400px');
+					$('.box').first().animate({'margin-left':'0'},1000);
+				}
+			})
+			function interval(){
+				return setInterval(function(){
+					//.box요소들이 에니메이션 동작중이지 않으면
+					if(!$('.box').is(':animated')){
+						$('.box').first().animate({'margin-left':'400px'},1000,function(){
+							$('.box').last().detach().prependTo('.box-container')
+							$(this).removeAttr('style');
+						})
+					}
+				},1100)
+			}
+		})
+	</script>
+</body>
+</html>

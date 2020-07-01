@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
+    <style>
+        .box-container{
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .box-ham{
+            float: right;
+            position: absolute;
+            font-size: 20px;
+            text-align: center;
+            color: gray;
+            right: 12px;
+            top: 5px;
+        }
+        .box-menu{
+            width: 200px;
+            height: 256px;
+            border: 1px solid gray;
+            position: absolute;
+            box-sizing: border-box;
+            right: -200px;
+            top: 43px;
+        }
+        .box-ham .fa-times{
+            display: none;
+        }.box-ham:hover{
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <a href="#" class="box-ham">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="box-ham">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="box-menu"></div>
+    </div>
+    <script> 
+        $(function(){
+            $('box-ham').click(function(){
+                if(!$(this).hasClass('show'))
+                    $('.box-menu').stop().animate({'right':0}, 500);
+                else
+                    $('.box-menu').stop().animate({'right':'-200px'}, 500);
+                    $(this).toggleClass('show');
+            })      
+        })
+    </script>
+</body>
+</html>

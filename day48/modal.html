@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        .box-container{
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid rgb(173, 173, 173);
+        }
+        .box-login-nav{
+            position: relative;
+            margin: 30px 50px 30px 45px;
+        }
+        .box-login-nav>input{
+            width: 200px;
+            height: 18px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .box-login{
+            position: absolute;
+            width: 215px;
+            height: 50px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 50px;
+            background-color:rgb(204, 213, 223);
+            border-radius: 7px;
+        }
+        .link-login{
+            text-decoration: none;
+            color:lightyellow;
+        }
+        .box-popup{
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 45px;
+            background-color: rgb(122, 146, 168);
+            text-align: center; 
+            line-height: 100px;
+            color: #fff;
+        }
+        .display-none{
+            display:none;   
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box-popup">POP-UP</div>
+        <div class="box-login-nav">
+            <input type="text" placeholder="아이디"><br>
+            <input type="password" placeholder="비밀번호">
+            <div class="box-login">
+                <a href="#" class="link-login">로그인</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            $('.link-login').click(function(){
+                
+            })
+        })
+    </script>
+</body>
+</html>
