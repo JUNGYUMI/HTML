@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUDIA COFFEE COMPANY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*헤드 부분*/
+        .main-head{
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            margin: 0 auto;
+            top: 0;
+            display: block;
+            position: relative;
+        }
+        .container-sign{
+            height: 30px;
+            right: 0;
+            position: absolute;
+            margin-top: 5px;
+        }
+        .box-signin{
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+            float: left;
+        }
+        .box-signup{
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+            float: left;
+        }
+        .link-signin, .link-signup{
+            text-decoration: none;
+            color: rgb(231, 231, 231);
+        }
+        .link-signin:hover, .link-signup:hover{
+            text-decoration: underline;
+        }
+        /*메뉴 부분*/
+        .nav-list{
+            list-style: none;
+        }
+        .eudia-list{
+            color: rgb(231, 231, 231);
+            float: left;
+            margin-right: 10px;
+            font-weight: 800px;
+            font-size: 18px;
+            line-height: 70px;
+        }
+        /*내용 부분*/
+        .container-content{
+            height: 600px;
+            border: 1px solid black;
+            display: block;
+        }
+        /*footer*/
+        footer {
+            text-align: center;
+            padding: 7px;
+            background-color:rgb(214, 214, 214);
+            color: rgb(139, 139, 139);
+            min-height: 130px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-head">
+        <div class="container-sign">
+            <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
+            <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+        </div> 
+        <ul class="nav-list">
+            <li class="eudia-list">EUDIA STORY</li>
+            <li class="eudia-list">EUDIA MENU</li>
+            <li class="eudia-list">DRINK&DESSERT ORDER</li>
+            <li class="eudia-list">COMMUNITY</li>
+        </ul> 
+    </div>
+    <div class="container-content"></div>
+    <footer>
+        <p>footer Author: Hege Refsnes</p>
+    </footer>
+   
+</body>
+</html>
