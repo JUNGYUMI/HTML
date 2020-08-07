@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>EUDIA COFFEE COMPANY</title>
     <style>
         *{
@@ -13,8 +16,7 @@
         .main-head{
             width: 100%;
             height: 70px;
-            background-color: black;
-            margin: 0 auto;
+            background-color: rgb(247, 245, 245);
             top: 0;
             display: block;
             position: relative;
@@ -43,28 +45,48 @@
         }
         .link-signin, .link-signup{
             text-decoration: none;
-            color: rgb(231, 231, 231);
+            color: black;
         }
         .link-signin:hover, .link-signup:hover{
             text-decoration: underline;
         }
         /*메뉴 부분*/
+        .container-list{
+            height: 30px;
+            position: relative;
+            padding: 30px 11px 11px;
+        }
         .nav-list{
             list-style: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            height: 30px;
+            letter-spacing: -1px;
+            font-family: "Inconsolata", sans-serif;  
+            margin: 0 auto;
         }
         .eudia-list{
-            color: rgb(231, 231, 231);
             float: left;
-            margin-right: 10px;
-            font-weight: 800px;
-            font-size: 18px;
-            line-height: 70px;
+            vertical-align: middle;
+        }
+        .eudia-list:first-of-type{
+            margin-left: 300px;
+        }
+        .nav-list .eudia-list+.eudia-list{
+            margin-left: 70px;
+        }
+        .link-list{
+            text-decoration: none;
+            color: black;
         }
         /*내용 부분*/
         .container-content{
-            height: 600px;
-            border: 1px solid black;
+            height: 1200px;
             display: block;
+        }
+        .collapse{
+            z-index: 15;
         }
         /*footer*/
         footer {
@@ -72,10 +94,8 @@
             padding: 7px;
             background-color:rgb(214, 214, 214);
             color: rgb(139, 139, 139);
-            min-height: 130px;
-            
-        }
-        
+            min-height: 130px;   
+        }   
     </style>
 </head>
 <body>
@@ -83,15 +103,87 @@
         <div class="container-sign">
             <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
             <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+        </div>
+        <div class="container-list">
+            <ul class="nav-list">
+                <li class="eudia-list">
+                    <a href="#demo" class="link-list" data-toggle="collapse">EUDIA STORY</a>
+                    <div id="demo" class="collapse">
+                        <a>카페소개</a><br>
+                        <a>찾아오시는 길</a> 
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo2" class="link-list" data-toggle="collapse">EUDIA MENU</a>
+                    <div id="demo2" class="collapse">
+                        <a>음료메뉴</a><br>
+                        <a>디저트 메뉴</a>
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo3" class="link-list" data-toggle="collapse">DRINK&DESSERT ORDER</a>
+                    <div id="demo3" class="collapse">
+                        <a>온라인 주문</a><br>
+                        <a>TAKE OUT</a>
+                      </div>
+                </li>
+                <li class="eudia-list">
+                    <a href="#demo4" class="link-list" data-toggle="collapse">COMMUNITY</a>
+                    <div id="demo4" class="collapse">
+                        <a>공지사항</a><br>
+                        <a>고객문의</a><br>
+                        <a>창업상담</a>
+                      </div>
+                </li>
+            </ul>
         </div> 
-        <ul class="nav-list">
-            <li class="eudia-list">EUDIA STORY</li>
-            <li class="eudia-list">EUDIA MENU</li>
-            <li class="eudia-list">DRINK&DESSERT ORDER</li>
-            <li class="eudia-list">COMMUNITY</li>
-        </ul> 
     </div>
-    <div class="container-content"></div>
+    <div class="container-content">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- 넘어 갈 사진들 -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="../포트폴리오/cafe_image2.jpg" alt="EUDIA" width="1200" height="700">      
+              </div>
+        
+              <div class="item">
+                <img src="../포트폴리오/cafe_image2.jpg" alt="SCONE" width="1200" height="700">
+                <div class="carousel-caption">
+                  <h3>스콘 사진</h3>
+                </div>      
+              </div>
+            
+              <div class="item">
+                <img src="../포트폴리오/cafe_image3.jpg" alt="DRINK" width="1200" height="700">
+                <div class="carousel-caption">
+                  <h3>음료사진</h3>   
+                </div>      
+              </div>
+              <div class="item">
+                <img src="../포트폴리오/cafe_image3.jpg" alt="DRINK" width="1200" height="700">
+                <div class="carousel-caption">
+                  <h3>기타사진</h3>   
+                </div>      
+              </div>
+            </div>
+            <!-- 이전, 다음 버튼 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
     <footer>
         <p>footer Author: Hege Refsnes</p>
     </footer>
