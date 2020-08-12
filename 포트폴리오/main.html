@@ -15,8 +15,8 @@
         /*헤드 부분*/
         .main-head{
             width: 100%;
-            height: 70px;
-            background-color: rgb(247, 245, 245);
+            height: 75px;
+            background-color: rgb(243, 243, 243);
             top: 0;
             display: block;
             position: relative;
@@ -80,22 +80,63 @@
             text-decoration: none;
             color: black;
         }
+        #demo, #demo2, #demo3, #demo4{
+            cursor: pointer;
+        }
+        #demo:hover, #demo2:hover, #demo3:hover, #demo4:hover{
+            text-decoration: none;
+        }
         /*내용 부분*/
         .container-content{
             height: 1200px;
-            display: block;
+            margin-top: 80px;
         }
         .collapse{
             z-index: 15;
         }
-        /*footer*/
+        /* sns 꾸미기*/
+        .box-container-wrapper{
+            height: 414px;
+            margin-top: 100px;
+            background-image: url(../포트폴리오/background.jpg);
+            background-repeat: no-repeat;
+        }
+        .container-sns{
+            height: 314px;
+            width: 980px;
+            margin: 0 auto;
+            margin-top: 20px;
+            list-style: none;
+        }
+        .list-sns{
+            width: 314px;
+            height: 314px;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 12px;
+            margin-top:50px;
+        }
+        .link-sns{
+            width: 314px;
+            height: 314px;
+        }
+        .icon-insta{
+            top: -310px;
+            left: 5px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        /*footer ⓒ*/
         footer {
             text-align: center;
             padding: 7px;
             background-color:rgb(214, 214, 214);
             color: rgb(139, 139, 139);
             min-height: 130px;   
-        }   
+        }
+        .footer{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -183,10 +224,42 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+        <!-- sns -->
+        <div class="box-container-wrapper">
+            <ul class="container-sns">
+                <li class="list-sns">
+                    <a class="link-sns" href="https://www.instagram.com/eudia_coffee/">
+                        <img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+                    </a>
+                    <span class="icon-insta">
+                        <img src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+                    </span>
+                </li>
+                <li class="list-sns">
+                    <a href="https://www.instagram.com/eudia_coffee/">
+                        <img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+                    </a>
+                    <span class="icon-insta">
+                        <img src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+                    </span>
+                </li>
+                <li class="list-sns">
+                    <a href="https://www.instagram.com/eudia_coffee/">
+                        <img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+                    </a>
+                    <span>
+                        <img  class="icon-insta" src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>   
     <footer>
-        <p>footer Author: Hege Refsnes</p>
+        <div class="footer">
+            <p>충북 청주시 흥덕구 옥산면 청주역로 689 1층</p>
+            <p>고객상담센터: 070-4015-6062</p>
+            <strong>Copyrightⓒ2020EUDIA.All rights Reserved.</strong>
+        </div>
     </footer>
-   
 </body>
 </html>
