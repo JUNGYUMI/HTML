@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>서브 메뉴</title>
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		nav{
+			height: 50px;
+			background-color: aliceblue;
+		}
+		nav>ul{
+			display: flex;
+		}
+		.menu{
+			width: 100%;
+			height: 50px;
+			box-sizing: border-box;
+		}
+		.menu:nth-child(1)>a,
+		.menu:nth-child(2)>a{
+			border-right: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.menu>a,
+		.sub-menu>a{
+			display: block;
+			height: 100%;
+			width: 100%;
+			color: black;
+			text-align: center;
+			line-height: 48px;
+			font-size: 25px;
+			border: 1px solid black;
+			box-sizing: border-box;
+		}
+		.sub-menu{
+			height: 50px;
+			width: 100%;
+			background-color: aliceblue;
+			box-sizing: border-box;
+		}
+		.menu>ul{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="menu">
+				<a href="#">EUDIA STORY</a>
+				<ul>
+					<li class="sub-menu">
+						<a href="#">EUDIA 소개</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#">찾아오시는 길</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu">
+				<a href="#">EUDIA MENU</a>
+				<ul>
+					<li class="sub-menu">
+						<a href="#">음료메뉴</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#">디저트 메뉴</a>
+					</li>					
+				</ul>
+			</li>
+			<li class="menu">
+				<a href="#">DRINK&DESSERT ORDER</a>
+				<ul>
+					<li class="sub-menu">
+						<a href="#">온라인 주문</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#">TAKE OUT</a>
+					</li>
+				</ul>
+			</li>
+			<li class="menu">
+				<a href="#">COMMUNITY</a>
+				<ul>
+					<li class="sub-menu">
+						<a href="#">공지사항</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#">고객문의</a>
+					</li>
+					<li class="sub-menu">
+						<a href="#">창업상담</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		$('.menu').hover(function(){
+			$(this).find('ul').stop().slideToggle(500);
+		})
+	</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<script src="../js/jquery.js"></script>
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
 	<script src="https://kit.fontawesome.com/b1e3c8f87d.js" crossorigin="anonymous"></script>
 	<style>
 		.main-menu{
@@ -102,8 +102,6 @@
 	</div>
 	<script>
 		$(function(){
-			/* a태그의 aria-selected 값이 true인 요소의 data-target과
-			일치하는 컨텐츠만 보여주고 나머지는 가려주는 함수*/
 			function viewContent(){
 				var target = $('.main-menu a[aria-selected=true]')
 											.attr('data-target');

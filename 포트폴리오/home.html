@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>main_home</title>
     <style>
         /*내용 부분*/
         .container-content{
@@ -15,6 +15,39 @@
         }
         .collapse{
             z-index: 15;
+        }
+		/* sns 꾸미기*/
+        .box-container-wrapper{
+            height: 414px;
+            margin-top: 100px;
+            background-image: url(../포트폴리오/background.jpg);
+            background-repeat: no-repeat;
+        }
+        .container-sns{
+            height: 314px;
+            width: 980px;
+            margin: 0 auto;
+            margin-top: 20px;
+            list-style: none;
+			padding: 0;
+        }
+        .list-sns{
+            width: 314px;
+            height: 314px;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 12px;
+            margin-top:50px;
+        }
+        .link-sns{
+            width: 314px;
+            height: 314px;
+        }
+        .icon-insta{
+            top: -310px;
+            left: 5px;
+            position: relative;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -62,8 +95,37 @@
             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
-            </a>
-        </div>
+			</a>
+		</div>
+		<!-- sns -->
+		<div class="box-container-wrapper">
+			<ul class="container-sns">
+				<li class="list-sns">
+					<a class="link-sns" href="https://www.instagram.com/eudia_coffee/">
+						<img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+					</a>
+					<span class="icon-insta">
+						<img src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+					</span>
+				</li>
+				<li class="list-sns">
+					<a href="https://www.instagram.com/eudia_coffee/">
+						<img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+					</a>
+					<span class="icon-insta">
+						<img src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+					</span>
+				</li>
+				<li class="list-sns">
+					<a href="https://www.instagram.com/eudia_coffee/">
+						<img src="../포트폴리오/White.jpg" alt="eudia" width=314px height=314px>
+					</a>
+					<span>
+						<img  class="icon-insta" src="../포트폴리오/instaIcon.jpg" alt="instagram" width=30px height=30px>
+					</span>
+				</li>
+			</ul>
+		</div>
     </div> 
 </body>
 </html>
