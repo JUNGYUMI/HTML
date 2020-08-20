@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>header</title>
     <style>
         /*헤드 부분*/
         .main-head{
@@ -24,7 +24,12 @@
             position: relative;
             margin-top: 5px;
         }
-        .box-signin{
+        .box-sign{
+            height: 30px;
+            width: 120px;
+            float: right;
+        }
+        .box-signin, .box-signup{
             width: 60px;
             height: 30px;
             text-align: center;
@@ -32,14 +37,7 @@
             font-weight: 500;
             float: left;
         }
-        .box-signup{
-            width: 80px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            font-weight: 500;
-            float: left;
-        }
+        
         .link-signin, .link-signup{
             text-decoration: none;
             color: black;
@@ -88,8 +86,10 @@
 <body>
     <div class="main-head">
         <div class="container-sign">
-            <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
-            <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+            <div class="box-sign">
+                <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
+                <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+            </div>
         </div>
         <div class="container-list">
             <ul class="nav-list">

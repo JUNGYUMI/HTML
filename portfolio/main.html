@@ -22,12 +22,18 @@
             position: relative;
         }
         .container-sign{
+            width: 100%;
             height: 30px;
             right: 0;
-            position: absolute;
+            position: relative;
             margin-top: 5px;
         }
-        .box-signin{
+        .box-sign{
+            height: 30px;
+            width: 120px;
+            float: right;
+        }
+        .box-signin, .box-signup{
             width: 60px;
             height: 30px;
             text-align: center;
@@ -35,28 +41,21 @@
             font-weight: 500;
             float: left;
         }
-        .box-signup{
-            width: 80px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            font-weight: 500;
-            float: left;
-        }
+        
         .link-signin, .link-signup{
             text-decoration: none;
             color: black;
         }
         .link-signin:hover, .link-signup:hover{
             text-decoration: underline;
+            color: black;
         }
         /*메뉴 부분*/
         .container-list{
             height: 30px;
-            position: relative;
-            padding: 30px 11px 11px;
         }
         .nav-list{
+            position: absolute;
             list-style: none;
             font-weight: bold;
             font-size: 14px;
@@ -142,8 +141,10 @@
 <body>
     <div class="main-head">
         <div class="container-sign">
-            <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
-            <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+            <div class="box-sign">
+                <div class="box-signin"><a href="#" class="link-signin">로그인</a></div>
+                <div class="box-signup"><a href="#" class="link-signup">회원가입</a></div>
+            </div>
         </div>
         <div class="container-list">
             <ul class="nav-list">

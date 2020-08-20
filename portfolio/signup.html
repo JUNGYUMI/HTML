@@ -5,26 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>회원가입</title> 
 	<style> 
-		*{ 
-			margin: 0; 
-			padding: 0; 
-		} 
-		body{ 
-			background-color: rgb(245, 246, 247); 
-		} 
-		.container{ 
+		/* 회원가입 화면 */
+		.container-signup{ 
 			width: 500px; 
 			margin: 0 auto; 
 		} 
-		a{ 
-			text-decoration: none; 
-			color: black; 
-		} 
-		.logo{ 
+		.signup-logo{ 
 			text-align: left; 
-			margin: 20px 0; 
+			margin: 20px 0;
+			cursor: default; 
 		} 
-		.logo>a{ 
+		.signup-logo>span{ 
 			color: rgb(172, 172, 172); 
 			font-size: 30px; 
 			font-weight: 900; 
@@ -152,9 +143,9 @@
 	</style> 
 </head> 
 <body> 
-	<div class="container"> 
-		<div class="logo"> 
-			<a href="#">회원가입 정보</a> 
+	<div class="container-signup"> 
+		<div class="signup-logo"> 
+			<span>회원가입 정보</span> 
 		</div> 
 		<div class="container-id"> 
 			<div class="text-id">아이디</div> 
