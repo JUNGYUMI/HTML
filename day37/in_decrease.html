@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div>
+        <button onclick="form_btn(-1)">-</button>
+        <input type="text" id="text" value="1">
+        <button onclick="form_btn(1)">+</button>
+    </div>
+
+    <script>
+    function form_btn(n){
+        var text = document.getElementById("text"); // 폼 선택
+        text_val = parseInt(text.value); // 폼 값을 숫자열로 변환
+        text_val += n; // 계산
+        text.value = text_val; // 계산된 값을 바꾼다
+        if(text_val <= 0){
+        text.value = 1;   // 만약 값이 0 이하면 1로 되돌려준다, 1보다 작은 수는 나타나지 않게하기 위해   
+        }
+    }
+</script>
+</body>
+</html>

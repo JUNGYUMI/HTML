@@ -114,7 +114,8 @@
 		.box-email>input, 
 		.box-country>select, 
 		.box-certification>input, 
-		.box-number-in>input{ 
+		.box-number-in>input,
+		.box-country>input{ 
 			width: 100%; 
 			height: 28px; 
 			border: none; 
@@ -174,7 +175,7 @@
 		<div class="container-name"> 
 			<div class="text-name">이름</div> 
 			<div class="box-name box-signup"> 
-				<input type="text" name="name" id="name"> 
+				<input type="text" name="name" id="name" placeholder="이름을 입력해주세요"> 
 			</div> 
 		</div>  
 		<div class="container-gender"> 
@@ -197,13 +198,11 @@
 			<div class="text-bold">휴대전화</div> 
 			<div class="box-phone"> 
 				<div class="box-country box-signup"> 
-					<select name="country" id="country">  
-						<option value="+82" selected>대한민국 +82</option> 
-					</select> 
+					<input type="text" name="phone" id="phone" placeholder="전화번호를 입력하세요"> 
 				</div> 
 			</div> 
-		</div> 
-		<button class="btn-submit">가입하기</button> 
+		</div>
+		<button class="btn-submit">가입하기</button>
 	</div> 
 </body> 
 </html> 
