@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/global.css">
+   
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -12,7 +11,7 @@
     <title>온라인 주문</title>
     <style>
         .display-none{
-            display: none;
+            display:none;
         }
         /* 메뉴 전체 컨테이너 */
         .container-order{
@@ -66,7 +65,7 @@
             width: 150px;
             box-sizing: border-box;
             position: relative;
-            top: 0px;
+            top: 50px;
             float: left;
             margin-left: 40px;
         }
@@ -74,26 +73,24 @@
             box-sizing:border-box;
         }
         .box-menu-line1{
-            position: absolute;
-            top: 120px;
-            height: 130px;
+            position: relative;
+            top: -20px;
         }
         .box-menu-line2{
-            position: absolute;
-            top: 310px;
-            height: 130px;
+            position: relative;
+            top: 15px;
         }
         .box-menu-line3{
-            position: absolute;
-            top: 500px;
-            height: 130px;
+            position: relative;
+            top: 50px;
         }
         .cafe-menu-name{
             width: 50px;
             height: 50px;
         }
         .box-menu-name{
-            position: relative;        
+            position: relative;
+            top: -5px;
             left: 20px;
         }
         .btn-order{
@@ -162,6 +159,7 @@
                             </div>
                     </div>
                 </div>
+
                 <div class="box-menu-line2">
                     <div class="container-box-menu">
                             <img src="../portfolio/background.jpg" alt="메뉴" width="150" height="130">
@@ -199,6 +197,7 @@
                             </div>
                     </div>
                 </div>
+
                 <div class="box-menu-line3">
                     <div class="container-box-menu">
                             <img src="../portfolio/background.jpg" alt="메뉴" width="150" height="130">

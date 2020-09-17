@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
+    <title>글쓰기</title>
+</head>
+<body>
+    <div class="number">
+        <a href="#" id="decreaseQuantity"><i class="fas fa-minus"></i></a>
+        <span id="numberUpDown">1</span>
+        <a href="#" id="increaseQuantity"><i class="fas fa-plus"></i></a>
+    </div>
+    <script>
+    $(function(){
+        $('#decreaseQuantity').click(function(e){
+        e.preventDefault();
+        var stat = $('#numberUpDown').text();
+        var num = parseInt(stat,10);
+        num--;
+        if(num<=0){
+        alert('더이상 줄일수 없습니다.');
+        num =1;
+        }
+        $('#numberUpDown').text(num);
+        });
+        $('#increaseQuantity').click(function(e){
+        e.preventDefault();
+        var stat = $('#numberUpDown').text();
+        var num = parseInt(stat,10);
+        num++;
+
+        if(num>5){
+        alert('더이상 늘릴수 없습니다.');
+        num=5;
+        }
+        $('#numberUpDown').text(num);
+        });
+    });
+    </script>        
+</body>
+</html>

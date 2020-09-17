@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/20695271aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
-        <button onclick="form_btn(-1)">-</button>
-        <input type="text" id="text" value="1">
-        <button onclick="form_btn(1)">+</button>
+        <button onclick="form_btn(-1)"><i class="fas fa-minus"></i></button>
+        <input type="text" id="text" value="1" readonly>
+        <button onclick="form_btn(1)"><i class="fas fa-plus"></i></button>
     </div>
 
     <script>
